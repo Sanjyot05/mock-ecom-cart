@@ -1,16 +1,73 @@
-# React + Vite
+📦 My Mock E-Commerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack mock e-commerce cart built for Vibe Commerce coding assignment.
 
-Currently, two official plugins are available:
+🧠 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project demonstrates:
 
-## React Compiler
+A React (Vite) frontend
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A Node/Express backend
 
-## Expanding the ESLint configuration
+SQLite database for persistence
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Full CRUD cart management
+
+Mock checkout flow (no payments)
+
+⚙️ Tech Stack
+
+Frontend: React + TailwindCSS + Vite
+
+Backend: Node.js + Express
+
+Database: SQLite (via better-sqlite3)
+
+API: RESTful endpoints
+
+🚀 How to Run Locally
+Backend
+cd backend
+npm install
+npm run dev
+
+
+Backend runs on http://localhost:4000
+
+Frontend
+
+Open a new terminal:
+
+cd frontend
+npm install
+npm run dev
+
+
+Frontend runs on http://localhost:5173
+
+🧾 API Endpoints
+Method	Endpoint	Description
+GET	/api/products	Fetch product list
+GET	/api/cart	Get cart + total
+POST	/api/cart	Add to cart
+DELETE	/api/cart/:id	Remove item
+POST	/api/checkout	Mock checkout receipt
+🛍️ Features
+
+✅ Add / remove / update cart items
+✅ See running total
+✅ Mock checkout (name + email)
+✅ SQLite database storage
+✅ Responsive design (TailwindCSS)
+
+🧩 Folder Structure
+mock-ecom-cart/
+ ├── backend/
+ │   ├── server.js
+ │   ├── routes/
+ │   ├── db.js
+ ├── frontend/
+ │   ├── src/
+ │   ├── index.css
+ ├── README.md
