@@ -61,13 +61,3 @@ POST	/api/checkout	Mock checkout receipt
 ✅ SQLite database storage
 ✅ Responsive design (TailwindCSS)
 
-🧩 Folder Structure
-mock-ecom-cart/
- ├── backend/
- │   ├── server.js
- │   ├── routes/
- │   ├── db.js
- ├── frontend/
- │   ├── src/
- │   ├── index.css
- ├── README.md
